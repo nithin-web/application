@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>job application form</title>
+	<script type="text/javascript">
+	function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+	</script>
+
+	<style type="text/css">
+		.cont{
+			margin: auto;
+			width: 60%;
+			border: 5px solid black;
+			padding: 10px;
+			background-color: #9dc7819e;
+		}
+		.head{
+			margin: auto;
+			width: 60%;
+			border: 5px solid black;
+			padding: 10px;
+			background-color: #00ff031f;
+		}
+		.textcenter{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<h1 style="text-decoration: underline; text-align: center;">Front end developer</h1>
+		<h1 style="text-decoration: underline; text-align: center;">Application Form</h1>
+	</div>
+	<div class="cont">
+		<form>
+			<h2>Name:</h2>
+			<input type="text" name="name" size="80" style="height: 35px;" placeholder="Example: John">
+			<h2>E-Mail:</h2>
+			<input type="text" name="mail" size="80" style="height: 35px;" placeholder="Example: abcd@gmail.com">
+			<h2>Password:</h2>
+			<input type="Password" name="Password" id="myInput" size="80" style="height: 35px;">
+			<br>
+			<h3><input type="checkbox" style="width: 20px; height: 20px;" name="click" onclick="myFunction()">show password</h3>
+			<h2>Choose Region:</h2>
+			<select name="region" style="width: 400px; height: 40px;">
+				<option>Asian</option>
+				<option>European</option>
+				<option>North America</option>
+				<option>South America</option>
+				<option>Australia</option>
+				<option>Africa</option>
+			</select>
+			<h2>Contact number:</h2>
+			<p><select style="width: 50px; height: 40px;">
+				<option>+91</option>
+				<option>+92</option>
+				<option>+93</option>
+				<option>+94</option>
+				<option>+95</option>
+				<option>+96</option>
+				<option>+97</option>
+				<option>+98</option>
+				<option>+99</option>
+			</select>    <input size="40" type="text" name="" style="height: 35px;" placeholder="Example: ******9945"></p>
+			<h2>Gender:</h2>
+			<input type="radio" name="ot" id="male" value="male"><label for="male">Male</label><br>
+			<input type="radio" name="ot" id="female" value="female"><label for="female">Female</label><br>
+			<input type="radio" name="ot" id="others" value="others"><label for="others">Others</label><br>
+			<h2>Country:</h2>
+			<input type="text" name="coun" size="80" style="height: 35px;" placeholder="Example: India">
+			<h2>Address:</h2>
+			<input type="text" name="add" size="80" style="height: 35px;">
+			<h2>College/university name:</h2>
+			<input type="text" name="coll" size="80" style="height: 35px;" placeholder="Example: xyz university ">
+			<h2>Select your skills:</h2>
+			<p><input type="checkbox" name="py">Python</p>
+			<p><input type="checkbox" name="c">C</p>
+			<p><input type="checkbox" name="jav">Java</p>
+			<p><input type="checkbox" name="cpp">C++</p>
+			<p><input type="checkbox" name="htm">Html</p>
+			<p><input type="checkbox" name="cs">CSS</p>
+			<p><input type="checkbox" name="js">Javascript</p>
+			<h3>If Others please mention your skills:<input type="text" name="Others" size="45" style="height: 35px;"></h3>
+			<h2>Upload your resume: <input type="file" name="file" style="width: 1000px;"></h2>
+			<div class="textcenter">
+				<button type="submit" style="padding-left: 100px; padding-right: 100px; height: 50px; font-size: 30px;">Submit</button>
+			</div>
+
+		</form>
+	</div>
+
+
+</body>
+</html>
